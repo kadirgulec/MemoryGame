@@ -1,0 +1,72 @@
+:root{
+    --mainColor : #0C134F;
+    --secondColor: #1D267D;
+    --thirdColor: #5C469C;
+    --lastColor : #D4ADFC;
+}
+body{
+    background-color: var(--mainColor);
+    color: var(--lastColor);
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: var(--thirdColor);
+    height: 150px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+}
+.backImage img{
+    display: block !important;
+} 
+.image{
+    height: 50%;
+    width: 50%;
+    background-image: url(https://kadirguelec.de/assets/png/kg-ico.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--thirdColor);
+    border-radius: 10px;
+    
+}
+
+/* .wall{
+    background-color: var(--thirdColor);
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100px;
+    display: block;
+    border: 2px solid black;
+    border-radius: ;
+} */
+.item{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.backimage{
+    background-color: black;
+    border: 5px solid black;
+}
