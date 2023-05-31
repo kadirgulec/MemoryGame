@@ -30,7 +30,7 @@ img {
     max-width: 100%;
     object-fit: cover;
     border-radius: 10px;
-    display: none;
+    /* display: none; */
 }
 .backImage img{
     display: block !important;
@@ -47,28 +47,19 @@ img {
     
 }
 
-/* .wall{
-    background-color: var(--thirdColor);
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 150px;
-    width: 100px;
-    display: block;
-    border: 2px solid black;
-    border-radius: ;
-} */
 .item{
     display: flex;
     justify-content: center;
     height: 100%;
     width: 100%;
 }
-#card3{
-    order: -1;
-}
 
 .backimage{
     background-color: black;
     border: 5px solid black;
+}
+
+.startGame div{
+    margin: 1rem;
+    cursor: pointer;
 }
