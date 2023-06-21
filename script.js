@@ -1,4 +1,4 @@
-var backImages = {
+/* var backImages = {
     photo1: "https://upload.wikimedia.org/wikipedia/commons/4/43/Cute_dog.jpg",
     photo2: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Mating_of_Lampides_boeticus_%28Linnaeus%2C_1767%29_-_Pea_Blue.jpg",
     photo3: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Purple_roller_%28Coracias_naevius_mosambicus%29.jpg",
@@ -14,7 +14,14 @@ var backImages = {
     photo13: "",
     photo14: "",
     photo15: "",
+} */
+
+var backImages = {}
+for (i=1; i < 15; i++){
+    let picId = Math.floor(Math.random() * 1000);
+    backImages[`photo${i}`] = `https://picsum.photos/id/${picId}/150/100`;
 }
+console.log(backImages);
 let idNumber = 0;
 class card {
     constructor (backImage){
